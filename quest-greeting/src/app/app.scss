@@ -1,0 +1,38 @@
+/* Remove default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Improve text rendering */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Remove body margin */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link underlines */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons and inputs inherit font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
