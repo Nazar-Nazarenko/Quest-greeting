@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {INFO_CONFIG} from '../info-main.config';
 
 @Component({
   selector: 'app-global-layout',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './global-layout.scss'
 })
 export class GlobalLayout {
-
+  public config = INFO_CONFIG;
 }
