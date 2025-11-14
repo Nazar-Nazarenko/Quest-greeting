@@ -1,3 +1,5 @@
+import {USER_KEYS} from './user-keys-collection';
+
 export enum RoutesMain {
   AuthorizationPage = 'authorization-page',
   Home = 'home',
@@ -22,42 +24,161 @@ export interface Question {
   imgUrl?: string;
 }
 
-export const INFO_CONFIG: InfoMainModel = {
-  title: 'Вітаю з Днем Народження!',
-  userName: 'Катруся',
-  description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
-  startNotice: ' Це демонстраційна сторінка, яка показує, як зробити адаптивний інтерфейс за допомогою TailwindCSS.' +
-    ' Спробуйте змінити розмір вікна браузера — контент автоматично підлаштовується під різні екрани 📱💻.',
-  errorMessage: 'В твоєму коді є помилка, спробуй ще раз)',
-  placeholder: 'Сюди введи твій код',
-  questions: [
-    {
-      title: '',
-      question: '',
-      correctResponse: '',
-      incorrectResponse: '',
-      imgUrl: ''
-    },
-    {
-      title: '',
-      question: '',
-      correctResponse: '',
-      incorrectResponse: '',
-      imgUrl: 'assets/images/blank-photo.jpg'
-    },
-    {
-      title: '',
-      question: '',
-      correctResponse: '',
-      incorrectResponse: '',
-      imgUrl: ''
-    },
-    {
-      title: '',
-      question: '',
-      correctResponse: '',
-      incorrectResponse: '',
-      imgUrl: ''
-    }
-  ]
-}
+export const INFO_CONFIG: InfoMainModel[] = [
+  {
+    title: 'Вітаю з Днем Народження!',
+    userName: USER_KEYS.Katya,
+    description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
+    startNotice: ' Це демонстраційна сторінка, яка показує, як зробити адаптивний інтерфейс за допомогою TailwindCSS.' +
+      ' Спробуйте змінити розмір вікна браузера — контент автоматично підлаштовується під різні екрани 📱💻.',
+    errorMessage: 'В твоєму коді є помилка, спробуй ще раз)',
+    placeholder: 'Сюди введи твій код',
+    questions: [
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: 'assets/images/blank-photo.jpg'
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      }
+    ]
+  },
+  {
+    title: 'Вітаю з Днем Народження!',
+    userName: USER_KEYS.Igor,
+    description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
+    startNotice: ' Це демонстраційна сторінка, яка показує, як зробити адаптивний інтерфейс за допомогою TailwindCSS.' +
+      ' Спробуйте змінити розмір вікна браузера — контент автоматично підлаштовується під різні екрани 📱💻.',
+    errorMessage: 'В твоєму коді є помилка, спробуй ще раз)',
+    placeholder: 'Сюди введи твій код',
+    questions: [
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: 'assets/images/blank-photo.jpg'
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      }
+    ]
+  },
+  {
+    title: 'Вітаю з Днем Народження!',
+    userName: USER_KEYS.Sasha,
+    description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
+    startNotice: ' Це демонстраційна сторінка, яка показує, як зробити адаптивний інтерфейс за допомогою TailwindCSS.' +
+      ' Спробуйте змінити розмір вікна браузера — контент автоматично підлаштовується під різні екрани 📱💻.',
+    errorMessage: 'В твоєму коді є помилка, спробуй ще раз)',
+    placeholder: 'Сюди введи твій код',
+    questions: [
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: 'assets/images/blank-photo.jpg'
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      }
+    ]
+  },
+  {
+    title: 'Вітаю з Днем Народження!',
+    userName: USER_KEYS.Liza,
+    description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
+    startNotice: ' Це демонстраційна сторінка, яка показує, як зробити адаптивний інтерфейс за допомогою TailwindCSS.' +
+      ' Спробуйте змінити розмір вікна браузера — контент автоматично підлаштовується під різні екрани 📱💻.',
+    errorMessage: 'В твоєму коді є помилка, спробуй ще раз)',
+    placeholder: 'Сюди введи твій код',
+    questions: [
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: 'assets/images/blank-photo.jpg'
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      },
+      {
+        title: '',
+        question: '',
+        correctResponse: '',
+        incorrectResponse: '',
+        imgUrl: ''
+      }
+    ]
+  }
+]

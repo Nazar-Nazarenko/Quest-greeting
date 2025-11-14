@@ -6,6 +6,10 @@ import { AuthorizationPage } from './authorization-page/authorization-page';
 
 export const routes: Routes = [
   {
+    path: '',
+    component: AuthorizationPage
+  },
+  {
     path: RoutesMain.AuthorizationPage,
     component: AuthorizationPage
   },
