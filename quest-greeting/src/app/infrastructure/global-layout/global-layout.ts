@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import {INFO_CONFIG} from '../info-main.config';
+import {AfterViewInit, Component} from '@angular/core';
+import {INFO_CONFIG, InfoMainModel} from '../info-main.config';
+import {UserAuthorization} from '../services/user-authorization';
 
 @Component({
   selector: 'app-global-layout',
@@ -8,6 +9,15 @@ import {INFO_CONFIG} from '../info-main.config';
   templateUrl: './global-layout.html',
   styleUrl: './global-layout.scss'
 })
-export class GlobalLayout {
-  public config = INFO_CONFIG;
+export class GlobalLayout implements AfterViewInit {
+  public config: InfoMainModel | null = null;
+
+  constructor(private userAuthorization: UserAuthorization) {}
+
+  ngAfterViewInit(): void {
+    this.userAuthorization.getUserId().subscribe( (id) => {
+      this.config = INFO_CONFIG.filter((config) => config.id === id)[0]
+    })
+  }
+
 }

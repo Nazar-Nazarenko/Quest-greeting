@@ -1,4 +1,13 @@
-import {USER_KEYS} from './user-keys-collection';
+import { USER_KEYS } from './user-keys-collection';
+
+export enum CurrentUserId {
+  userNull = '0000',
+  userOne = '1111' ,
+  userTwo = '2222',
+  userThree = '3333',
+  userFour = '4444',
+  userFive = '5555',
+}
 
 export enum RoutesMain {
   AuthorizationPage = 'authorization-page',
@@ -7,6 +16,7 @@ export enum RoutesMain {
 }
 
 export interface InfoMainModel {
+  id: number;
   title: string
   userName: string;
   description: string;
@@ -26,6 +36,7 @@ export interface Question {
 
 export const INFO_CONFIG: InfoMainModel[] = [
   {
+    id: 0,
     title: 'Вітаю з Днем Народження!',
     userName: USER_KEYS.Katya,
     description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
@@ -65,6 +76,7 @@ export const INFO_CONFIG: InfoMainModel[] = [
     ]
   },
   {
+    id: 1,
     title: 'Вітаю з Днем Народження!',
     userName: USER_KEYS.Igor,
     description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
@@ -104,6 +116,7 @@ export const INFO_CONFIG: InfoMainModel[] = [
     ]
   },
   {
+    id: 2,
     title: 'Вітаю з Днем Народження!',
     userName: USER_KEYS.Sasha,
     description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
@@ -143,6 +156,7 @@ export const INFO_CONFIG: InfoMainModel[] = [
     ]
   },
   {
+    id: 3,
     title: 'Вітаю з Днем Народження!',
     userName: USER_KEYS.Liza,
     description: 'Сьогодні твій день, і нехай цей квест зробить його незабутнім!',
