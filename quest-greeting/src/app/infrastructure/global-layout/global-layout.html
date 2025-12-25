@@ -1,11 +1,10 @@
 <div class="min-h-screen flex flex-col items-center justify-between bg-gray-50 p-4">
   <header class="w-full max-w-4xl text-center mb-8">
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-500 mb-2">
-      <span class="mr-1">{{ config?.userName + ',' }}</span>
-      <span>{{ config?.title }}</span>
+      <ng-content select="[header]"></ng-content>
     </h1>
     <p class="text-gray-600 text-base sm:text-lg">
-      {{ config?.description }}
+      <ng-content select="[description]"></ng-content>
     </p>
   </header>
 

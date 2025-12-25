@@ -26,8 +26,9 @@ export class AuthorizationPage {
     this.userName.valueChanges.pipe(
       takeUntil(this.unsubscribe$))
       .subscribe( value => {
-      this.isDisabled = !(value && value.length > 3)
+        this.isDisabled = !(value && value.length > 3)
       this.userAuthorization.setUserIdName(value, this.getUserId(value))
+      this.userAuthorization.setSelectedUser(this.getUserId(value))
     })
   }
 

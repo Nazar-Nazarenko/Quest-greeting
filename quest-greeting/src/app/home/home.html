@@ -1,7 +1,15 @@
 <app-global-layout>
-  <div main>
-    <p class="text-gray-700 leading-relaxed">
-     {{ config?.startNotice }}
-    </p>
-  </div>
+  @if (user$ | async; as user) {
+    <div header>
+      {{ user.title }}
+    </div>
+    <div description>
+      {{ user.description }}
+    </div>
+    <div main>
+      <p class="text-gray-700 leading-relaxed">
+        {{ user.startNotice}}
+      </p>
+    </div>
+  }
 </app-global-layout>
