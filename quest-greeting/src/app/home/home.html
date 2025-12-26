@@ -1,12 +1,17 @@
 @if (user$ | async; as user) {
   <app-global-layout>
     <div header>
-      {{ user.title }}
+      <span>{{ user.title }}, {{ user.userName}}</span>
+      <span class="smile"></span>
     </div>
     <div main>
       <p class="text-gray-700 leading-relaxed">
         {{ user.startNotice}}
       </p>
+      <h2 class="text-purple-500">
+        <span class="mr-2 mt-4">{{ user.description }}</span>
+        <span class="snowman"></span>
+      </h2>
       <div class="flex items-center mt-8">
           <button
             (click)="moveToQuiz()"
