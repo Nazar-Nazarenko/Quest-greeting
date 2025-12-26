@@ -30,7 +30,7 @@ export class UserAuthorization {
   }
 
   public getUser(): Observable<InfoMainModel | null> {
-    return this.user$.asObservable() ?? null;
+    return this.user$.asObservable();
   }
 
   private getCurrentUserName(value: string): string {

@@ -1,15 +1,30 @@
-<app-global-layout>
-  @if (user$ | async; as user) {
+@if (user$ | async; as user) {
+  <app-global-layout>
     <div header>
       {{ user.title }}
-    </div>
-    <div description>
-      {{ user.description }}
     </div>
     <div main>
       <p class="text-gray-700 leading-relaxed">
         {{ user.startNotice}}
       </p>
+      <div class="flex items-center mt-8">
+          <button
+            (click)="moveToQuiz()"
+            type="button"
+            class="w-full max-w-sm bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 sm:py-4 px-6 rounded-xl shadow-md transition-all duration-200 active:scale-95"
+          >
+            Далі
+          </button>
+      </div>
     </div>
-  }
-</app-global-layout>
+  </app-global-layout>
+} @else {
+  <app-global-layout>
+    <div header>
+      <span [style.color]="'red'">Упс... Щось пішло не в той бік)</span>
+    </div>
+    <div main>
+      Перезавантажте сторінку або просто зайдіть заново на стартову сторінку і введіть свій пароль!
+    </div>
+  </app-global-layout>
+}
