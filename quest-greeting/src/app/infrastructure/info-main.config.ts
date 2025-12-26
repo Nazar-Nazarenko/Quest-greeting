@@ -46,9 +46,9 @@ export const INFO_CONFIG: InfoMainModel[] = [
     placeholder: 'Сюди введи твій код',
     questions: [
       {
-        title: '',
+        title: 'Зараз треба знайти перший подаруночок',
         question: '',
-        correctResponse: '',
+        correctResponse: 'Правильно, окей поїхали далі!',
         incorrectResponse: '',
         imgUrl: ''
       },

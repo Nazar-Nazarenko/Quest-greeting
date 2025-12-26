@@ -1,7 +1,19 @@
-<app-global-layout>
-  <div main>
-    <div>
-      quiz start page
+@if ( questions$ | async; as questions) {
+  <app-global-layout>
+    <div main>
+      <div>
+        <div>{{ questions[0].title }}</div>
+        <div>{{ questions[0].question }}</div>
+      </div>
     </div>
-  </div>
-</app-global-layout>
+  </app-global-layout>
+} @else {
+  <app-global-layout>
+    <div header>
+      <span [style.color]="'red'">Упс... Щось пішло не в той бік)</span>
+    </div>
+    <div main>
+      Перезавантажте сторінку або просто зайдіть заново на стартову сторінку і введіть свій пароль!
+    </div>
+  </app-global-layout>
+}
