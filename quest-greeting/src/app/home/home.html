@@ -4,7 +4,7 @@
       <span>{{ user.title }}, {{ user.userName}}</span>
       <span class="smile"></span>
     </div>
-    <div main>
+    <div main class="flex flex-col items-center justify-between">
       <p class="text-gray-700 leading-relaxed">
         {{ user.startNotice}}
       </p>
@@ -26,7 +26,7 @@
 } @else {
   <app-global-layout>
     <div header>
-      <span [style.color]="'red'">Упс... Щось пішло не в той бік)</span>
+      <span [style.color]="'red'">Упс... Щось пішло не так)</span>
     </div>
     <div main>
       Перезавантажте сторінку або просто зайдіть заново на стартову сторінку і введіть свій пароль!
